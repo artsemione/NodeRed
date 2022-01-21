@@ -1,0 +1,6 @@
+var d = new Date(msg.payload);
+
+Strg = d.toISOString();    // 2022-01-04T00:00:00.000Z
+msg.payload = Strg.replace('T',' ')..replace('Z','')
+
+return msg;
