@@ -1,0 +1,6 @@
+var d = new Date(msg.payload);
+
+Strg = d.toISOString();
+msg.payload = Strg
+
+return msg;
